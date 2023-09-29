@@ -12,21 +12,20 @@ import java.util.Date;
 
 @Getter
 @Setter
-@Entity
-@NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "tblUser")
-public class User {
+@NoArgsConstructor
+@Entity
+@Table(name = "tblTrainingProgram")
+public class TrainingProgram {
 
     @Id
-    private Long userId;
+    private String trainingProgramCode;
     private String name;
-    private String email;
-    private String phone;
-    private Date dob;
-    private String gender;
-    private int role;
-    private boolean status;
+    private Long userId;
+    private Date starTime;
+    private int duration;
+    private String topicCode;
+    private String status;
     private String createBy;
     private Date createDate;
     private String modifiedBy;

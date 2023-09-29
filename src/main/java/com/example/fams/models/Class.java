@@ -8,25 +8,27 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.sql.Date;
 
 @Getter
 @Setter
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "tblUser")
-public class User {
+@Table(name = "tblClass")
+public class Class {
 
     @Id
-    private Long userId;
-    private String name;
-    private String email;
-    private String phone;
-    private Date dob;
-    private String gender;
-    private int role;
-    private boolean status;
+    private Long classId;
+    private String trainingProgramCode;
+    private String className;
+    private String classCode;
+    private int duration;
+    private String status;
+    private String location;
+    private  String fsu;
+    private Date startDate;
+    private Date endDate;
     private String createBy;
     private Date createDate;
     private String modifiedBy;
